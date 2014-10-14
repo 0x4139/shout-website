@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+.sass-cache
+dist/*
+!dist/app.js
+!dist/package.json
+!dist/Procfile
+app/lisa.js
+app/lisa.css
+app/lisa/css.mapg
