@@ -9,6 +9,7 @@
   "author": "0x4139@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "gulp-cache": "^0.2.4",
     "browser-sync": "^1.5.8",
     "gulp": "^3.8.8",
     "gulp-autoprefixer": "^1.0.1",
@@ -27,6 +28,5 @@
     "reactify": "^0.14.0"
   },
   "dependencies": {
-    "gulp-cache": "^0.2.4"
   }
 }
