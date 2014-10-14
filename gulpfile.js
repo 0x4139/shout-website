@@ -108,7 +108,6 @@ gulp.task('release', function () {
       }
     ))
     .pipe(uglify())
-    .pipe(rename('dna.js'))
     .pipe(gulp.dest("dist/"))
     .pipe(projectSize({title: 'js'}));
 

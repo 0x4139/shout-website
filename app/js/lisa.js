@@ -1,15 +1,20 @@
+/**
+ * @jsx React.DOM
+ */
+var Home = require('./home');
+var Contact = require('./contact');
 var AmpersandRouter = require('ampersand-router');
 Router = AmpersandRouter.extend({
     routes: {
         '': 'home',
-        'salam':'salam'
+        'contact':'contact'
     },
-    
+
     home: function () {
-       alert(1);
+      React.renderComponent(<Home/>,document.getElementById('content'));
     },
-    salam:function  () {
-      alert(2);
+    contact:function  () {
+      React.renderComponent(<Contact/>,document.getElementById('content'));
     }
 });
 var router = new Router();
