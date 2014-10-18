@@ -1,7 +1,9 @@
-var express = require('express')
+var express = require('express');
+var compression = require('compression');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000))
+app.use(compression())
 app.use(express.static(__dirname))
 app.engine('html', require('ejs').renderFile);
 

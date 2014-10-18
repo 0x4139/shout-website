@@ -111,7 +111,7 @@ gulp.task('release', function () {
     .pipe(gulp.dest("dist/"))
     .pipe(projectSize({title: 'js'}));
 
-  return   gulp.src('./app/img/**/*')
+  gulp.src('app/img/**/*.*')
     .pipe(cache(imagemin({
       progressive: true,
       interlaced: true,
@@ -119,5 +119,15 @@ gulp.task('release', function () {
     })))
     .pipe(gulp.dest('dist/img'))
     .pipe(projectSize({title: 'images'}));
-
 });
+
+gulp.task('imags',function(){
+	gulp.src('app/img/**/*.*')
+    .pipe(cache(imagemin({
+      progressive: true,
+      interlaced: true,
+      use: [pngcrush()]
+    })))
+    .pipe(gulp.dest('dist/img'))
+    .pipe(projectSize({title: 'images'}));
+})

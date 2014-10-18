@@ -9,6 +9,7 @@
   "author": "0x4139@gmail.com",
   "license": "mit",
   "dependencies": {
+    "compression": "^1.2.0",
     "ejs": "^1.0.0",
     "express": "^4.9.7"
   }
