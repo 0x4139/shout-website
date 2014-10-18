@@ -1,7 +1,7 @@
 /**
  * @jsx React.DOM
  */
- var validateCode = require('./validateCode');
+var validateCode = require('./validateCode');
 var handler = React.createClass({
 
 	render: function() {
