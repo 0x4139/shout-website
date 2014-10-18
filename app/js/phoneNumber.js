@@ -21,14 +21,19 @@ var handler = React.createClass({
 		);
 	},
 	submitHandler:function(event){
-		$('#submitHandler').button('loading');
-		$.post( "http://shoutapi.herokuapp.com/validate", {phoneNumber:window.shout.phoneNumber})
-		  .done(function( data ) {
-			React.renderComponent(<validateCode/>,document.getElementById('content'));
-		  })
-		  .fail(function(data){
-		    alert(data);
-		  });
+		if(window.shout.phoneNumber && window.shout.phoneNumber == 10){
+			$('#submitHandler').button('loading');
+			$.post( "http://shoutapi.herokuapp.com/validate", {phoneNumber:window.shout.phoneNumber})
+			  .done(function( data ) {
+				React.renderComponent(<validateCode/>,document.getElementById('content'));
+			  })
+			  .fail(function(data){
+				var response = $.parseJSON( data.responseText );
+				alert(response.message);
+			  });
+		}else{
+			alert('Phone number is invalid');
+		}
 	},
 	handleChange:function(event){
 		window.shout.phoneNumber='+4'+event.target.value;
