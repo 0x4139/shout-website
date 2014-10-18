@@ -1,7 +1,7 @@
 /**
  * @jsx React.DOM
  */
- var Congrats = require('./congrats');
+var Congrats = require('./congrats');
 var handler = React.createClass({
 
 	render: function() {

@@ -8,3 +8,8 @@ dist/*
 app/lisa.js
 app/lisa.css
 app/lisa/css.mapg
+.idea/libraries/shout_website_node_modules.xml
+
+.idea/scopes/scope_settings.xml
+
+.idea/workspace.xml

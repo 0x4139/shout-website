@@ -1,7 +1,7 @@
 /**
  * @jsx React.DOM
  */
- var PhoneNumber = require('./phoneNumber');
+var PhoneNumber = require('./phoneNumber');
 var handler = React.createClass({
 
 	render: function() {

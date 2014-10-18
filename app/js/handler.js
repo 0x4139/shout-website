@@ -1,8 +1,8 @@
 /**
  * @jsx React.DOM
  */
- var PhoneNumber = require('./phoneNumber');
- var margin_zero = { margin: 0 };
+var PhoneNumber = require('./phoneNumber');
+var margin_zero = { margin: 0 };
 
 var handler = React.createClass({
 
