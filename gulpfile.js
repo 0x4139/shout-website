@@ -93,7 +93,7 @@ gulp.task('release', function () {
 		sourcemapPath: '/scss'
 	}).on('error', console.error.bind(console)))
 	.pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
-	.pipe(gulp.dest('./dist'))
+	.pipe(gulp.dest('./dist'));
 
   gulp.src(['./src/fonts/**'])
     .pipe(gulp.dest('dist/fonts'))
