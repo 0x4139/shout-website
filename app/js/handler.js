@@ -24,9 +24,11 @@ var handler = React.createClass({
 					<div className="col-md-4 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-offset-4 well well-sm">
 
 						<div class="well">
-							<h4>Usages</h4>
-							<div><span className="glyphicon glyphicon-star"></span> To join a channel (in this case Talks) you need to send a SMS with <strong>:sub /talks</strong></div>
-							<div><span className="glyphicon glyphicon-envelope"></span> To send a message to a subscribe channel just <strong>/talks Hello all! Veniti la o bere la /sisha dupa?</strong></div>
+							<h4>Usage:</h4>
+							<div><span className="glyphicon glyphicon-star"></span> To join a channel you need to send a SMS like:</div>
+							 <p className="text-info text-center">:sub /talks</p>
+							<div><span className="glyphicon glyphicon-envelope"></span> To send a message to channel send a SMS like:</div>
+							<p className="text-info text-center">/talks Hello all! Veniti la o bere la /sisha dupa?</p>
 						</div>
 
 					</div>
