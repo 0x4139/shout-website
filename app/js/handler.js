@@ -20,6 +20,17 @@ var handler = React.createClass({
 		                <button id="submitHandler" onClick={this.submitHandler} className="btn btn-info col-md-12 col-xs-12 col-sm-12" data-loading-text="please wait..."><i className="glyphicon glyphicon-share-alt"></i> Next</button>
 		            </div>
 		        </div>
+				<div className="row animated bounceInLeft">
+					<div className="col-md-4 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-offset-4 well well-sm">
+
+						<div class="well">
+							<h4>Usages</h4>
+							<div><span className="glyphicon glyphicon-star"></span> To join a channel (in this case Talks) you need to send a SMS with <strong>:sub /talks</strong></div>
+							<div><span className="glyphicon glyphicon-envelope"></span> To send a message to a subscribe channel just <strong>/talks Hello all! Veniti la o bere la /sisha dupa?</strong></div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		);
 	},
