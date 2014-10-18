@@ -8,10 +8,4 @@ dist/*
 app/lisa.js
 app/lisa.css
 app/lisa/css.mapg
-.idea/.name
-
-.idea/encodings.xml
-
-*.xml
-
-.idea/shout-website.iml
+.idea/
