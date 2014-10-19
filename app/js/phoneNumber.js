@@ -21,7 +21,7 @@ var handler = React.createClass({
 		);
 	},
 	submitHandler:function(event){
-		if(window.shout.phoneNumber && window.shout.phoneNumber == 10){
+		if(window.shout.phoneNumber.length == 12){
 			$('#submitHandler').button('loading');
 			$.post( "http://shoutapi.herokuapp.com/validate", {phoneNumber:window.shout.phoneNumber})
 			  .done(function( data ) {
