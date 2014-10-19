@@ -37,7 +37,7 @@ var handler = React.createClass({
 		);
 	},
 	submitHandler:function(event){
-		if(window.shout.handler && window.shout.handler.length > 3 && window.shout.handler.length < 9){
+		if(window.shout.handler.length > 3 && window.shout.handler.length < 9){
 			$('#submitHandler').button('loading');
 			React.renderComponent(<PhoneNumber/>,document.getElementById('content'));
 		}else{
